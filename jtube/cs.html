@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Video Screen</title>
+    <script src="script.js"></script>
+    <style>
+        body {
+            background-color: black;
+            margin: 310px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            color: white;
+			width: 80%; /* Set the width to 100% */
+        }
+
+        iframe {
+            width: 80%;
+            height: 60%;
+            margin-bottom: 20px;
+        }
+
+        input {
+            width: 60%;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        button {
+            padding: 10px;
+            background-color: #4285f4;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+	<script nonce="your-nonce" src="script.js"></script>
+</head>
+<body>
+    <input type="text" id="videoUrl" placeholder="Enter YouTube Video URL">
+    <button id="playVideoButton">Play Video</button>
+    <iframe id="videoPlayer" frameborder="0" allowfullscreen></iframe>
+	<!-- Add a nonce attribute to script tag -->
+    
+</body>
+</html>

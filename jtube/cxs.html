@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Jewtube Redirector</title>
+    //<script src="script.js"></script>
+	<script src="cs-script.js"></script>
+
+    <style>
+        body {
+            background-color: black;
+        }
+
+        #videoQueue {
+            background-color: white;
+            padding: 10px;
+        }
+
+        .queueItem {
+            display: flex;
+            align-items: center;
+        }
+
+        .deleteButton {
+            margin-left: 10px;
+            cursor: pointer;
+        }
+    </style>
+
+</head>
+<body>
+    <div>
+        <iframe id="myVideo" width="560" height="315" src="https://www.youtube.com/embed/your-video-ID-here" frameborder="0" allowfullscreen></iframe>
+        <div>
+            <input type="text" id="videoURL" placeholder="Enter YouTube Video URL">
+            <button onclick="addToQueue()">Add to Queue</button>
+            <button onclick="playFirstVideo()">Play First Video</button>
+            <button onclick="playNextVideo()">Play Next Video</button>
+        </div>
+    </div>
+
+    <div>
+        <h2>Video Queue</h2>
+        <ul id="videoQueue">
+        </ul>
+    </div>
+
+   
+
+       
+</body>
+</html>
